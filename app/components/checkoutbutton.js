@@ -2,7 +2,7 @@
 const Checkbtn = () => {
   return (
     <>
-    <button className='bg-red-700 h-9 w-40 text-white rounded-md m-4 font-semibold'>
+    <button className='bg-[rgba(204,0,0)] h-9 w-40 text-white rounded-md  font-semibold'>
         Checkout
         </button>
         </>
