@@ -1,4 +1,7 @@
+'use client'
+import { useState } from 'react';
 const Card2 = () => {
+  let [count, setCount]=useState(0);
   return (
     <>
    
@@ -29,9 +32,9 @@ const Card2 = () => {
         <section className="flex med:w-[100%] med:gap-14 med:pt-[10px] small:w-[50%]">
           <div className="med:py-14 med:pl-14 med:pr-0 small:p-0 ">
           <div className="flex hover:shadow-xl shadow-black border border-stone-400 hover:border-2 med:gap-10 med:w-[100%] px-3 rounded-md small:w-[90%] ">
-            <button className='hover:bg-red-500 w-10 h-7 mt-1.5 rounded-md'>-</button>
-            <h2 className="m-2">1</h2> 
-            <button className='hover:bg-red-500 w-10 h-7 mt-1.5 rounded-md'>+</button>
+            <button className='hover:bg-red-500 w-10 h-7 mt-1.5 rounded-md' onClick={()=>setCount(count-1 )}>-</button>
+            <h2 className="m-2">{count}</h2> 
+            <button className='hover:bg-red-500 w-10 h-7 mt-1.5 rounded-md' onClick={()=>setCount(count + 1)}>+</button>
           </div>
 
 
